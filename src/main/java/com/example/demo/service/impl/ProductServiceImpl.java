@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
@@ -104,7 +105,7 @@ public class ProductServiceImpl implements ProductService {
         ArrayList<Optional<Object>> objects = new ArrayList<>();
         objects.get(0).ifPresent(o -> System.out.println("123"));
         CompletableFuture<Void> voidCompletableFuture = CompletableFuture.allOf();
-
+        HashMap<String, String> map = new HashMap<>();
         return true;
     }
 
