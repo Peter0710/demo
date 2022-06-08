@@ -105,8 +105,6 @@ public class ProductServiceImpl implements ProductService {
         ArrayList<Optional<Object>> objects = new ArrayList<>();
         objects.get(0).ifPresent(o -> System.out.println("123"));
         CompletableFuture<Void> voidCompletableFuture = CompletableFuture.allOf();
-        HashMap<String, String> map = new HashMap<>();
-        //123
         return true;
     }
 }
