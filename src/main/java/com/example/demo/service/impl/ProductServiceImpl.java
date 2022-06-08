@@ -103,7 +103,7 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public Boolean second() {
         ArrayList<Optional<Object>> objects = new ArrayList<>();
-        objects.get(0).ifPresent(o -> System.out.println("123"));
+        objects.get(0).ifPresent(o -> System.out.println("456"));
         CompletableFuture<Void> voidCompletableFuture = CompletableFuture.allOf();
         return true;
     }
